@@ -3,10 +3,32 @@
 	<head>
 		<title>{{.Title}}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,600,400italic' rel='stylesheet' type='text/css'>
 		<link href="/css/rlc.css" rel="stylesheet" type="text/css" media="all" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script src="/js/rlc.js"></script>
+		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" onload="rlcInit()"></script>
+		<script>
+			var rlcInit = function() {
+				$("#hamburger").on("click", function(e) {
+					e.preventDefault();
+					$("#nav").show();
+				});
+				$("#close-nav").on("click", function(e) {
+					e.preventDefault();
+					$("#nav").hide();
+				});
+			};
+
+			WebFontConfig = {
+				google: {
+					families: ['Open Sans']
+				}
+			};
+
+			(function(d) {
+				var wf = d.createElement('script'), s = d.scripts[0];
+				wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+				s.parentNode.insertBefore(wf, s);
+			})(document);
+		</script>
 	</head>
 	<body>
 		<div id="nav">
