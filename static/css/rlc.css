@@ -201,3 +201,7 @@ footer div.section {
 #container img {
 	max-width: 100%;
 }
+hr {
+	border-top: 1px solid #DBDCD6;
+	margin: 60px 0px;
+}
