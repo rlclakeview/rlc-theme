@@ -75,9 +75,6 @@ body {
 	max-width: 960px;
 	margin: 0 auto;
 }
-#container img {
-	max-width: 100%;
-}
 #nav {
 	display: none;
 	position: fixed;
@@ -116,7 +113,7 @@ body {
 	text-align: center;
 }
 #rlc img {
-	max-width: 360px;
+	max-width: 100%;
 }
 .content-container {
 	padding: 30px;
@@ -197,4 +194,7 @@ footer div.section {
 }
 #content {
 	text-align: justify;
+}
+#container img {
+	max-width: 100%;
 }
