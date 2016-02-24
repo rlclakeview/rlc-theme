@@ -120,6 +120,9 @@ body {
 	max-width: 564px;
 	margin: 0 auto;
 }
+.content-container img {
+	max-width: 100%;
+}
 
 h1 {
 	font-size: 28px;
