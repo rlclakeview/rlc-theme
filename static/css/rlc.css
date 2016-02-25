@@ -83,7 +83,8 @@ body {
 	padding: 40px;
 	line-height: 40px;
 	text-transform: uppercase;
-	overflow-y: auto;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 #nav a  {
 	text-decoration: none;
@@ -120,7 +121,7 @@ body {
 }
 .content-container {
 	padding: 30px;
-	/* max-width: 564px; */
+	max-width: 564px;
 	margin: 0 auto;
 }
 .content-container img {
@@ -225,10 +226,11 @@ hr {
 		display: block;
 		position: static;
 		width: auto;
-		background-color: #4868B1;
+		background-color: #3E6BB2;
 		height: auto;
 		padding: 0px;
 		height: 55px;
+		overflow: hidden;
 	}
 	#nav a {
 		color: #B5C2E1;
