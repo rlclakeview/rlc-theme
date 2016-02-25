@@ -8,11 +8,11 @@
 			rlcInit = function() {
 				$("#hamburger").on("click", function(e) {
 					e.preventDefault();
-					$("#nav").show();
+					$("#nav").removeClass("hide-mobile");
 				});
 				$("#close-nav").on("click", function(e) {
 					e.preventDefault();
-					$("#nav").hide();
+					$("#nav").addClass("hide-mobile");
 				});
 			};
 
@@ -32,11 +32,12 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div id="nav">
+			<div id="nav" class="hide-mobile">
 				<div id="nav-inner">
 					<a id="close-nav" href="#">X</a>
 					<ol>
-						<li><a href="/">Home</a></li>
+						<li id="home-desktop"><a href="/">Resurrection Lutheran Church</a></li>
+						<li id="home-mobile"><a href="/">Home</a></li>
 						<li><a href="/im-new">I'm New</a></li>
 						<li><a href="/worship">Worship</a></li>
 						<li>
