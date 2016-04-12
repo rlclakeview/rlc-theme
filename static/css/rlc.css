@@ -52,10 +52,10 @@ html, body {
 }
 .wrapper {
 	min-height: 100%;
-	margin: 0 auto -400px;
+	margin: 0 auto -500px;
 }
 footer {
-	height: 400px;
+	height: 500px;
 	border-top: 1px solid #DBDCD6;
 	background-color: #F1F2EC;
 }
@@ -193,7 +193,7 @@ li {
 	background-color: #F57A0D;
 	border-radius: 5px;
 }
-#top-mobile a {
+#top-mobile .call-to-action {
 	float: right;
 	text-decoration: none;
 	color: #fff;
@@ -211,7 +211,8 @@ footer, footer p {
 footer a.org {
 	text-decoration: none;
 }
-footer .organization-name {
+footer .organization-name, footer h1 {
+	display: inline-block;
 	font-weight: 600;
 	font-size: 16px;
 	font-style: normal;
@@ -221,7 +222,7 @@ footer .organization-name {
 	border-bottom: 1px solid #DDE0DD;
 }
 footer div.section {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 #content {
 }
@@ -237,6 +238,10 @@ hr {
 }
 
 @media (min-width: 960px) {
+	.grid-50 {
+		float: left;
+		width: 50%;
+	}
 	#top-mobile, #close-nav, #home-mobile {
 		display: none;
 	}
