@@ -119,6 +119,19 @@ body {
 	width: 360px;
 	clear: both;
 }
+.clear {
+	clear: both;
+}
+#social ol {
+	list-style-type: none;
+	margin: 0 auto;
+	width: 144px;
+}
+#social ol li {
+	float: left;
+	width: 48px;
+	text-align: center;
+}
 .content-container {
 	padding: 30px;
 	max-width: 564px;
