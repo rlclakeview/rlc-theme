@@ -256,18 +256,21 @@ hr {
 		height: auto;
 		padding: 0px;
 		height: 55px;
-		overflow: hidden;
+		overflow: visible;
 	}
 	#nav a {
 		color: #B5C2E1;
 		line-height: 55px;
+		display: block;
+	}
+	#nav a#close-nav {
+		display: none;
 	}
 	#nav #home-desktop a {
 		color: #fff;
 		padding-right: 15px;
 	}
 	#nav a:hover {
-		color: #fff;
 	}
 	#nav-inner {
 		min-height: 0;
@@ -280,14 +283,50 @@ hr {
 		margin: 0 auto;
 	}
 	#nav li {
-		float: left;
 		padding-right: 15px;
+		position: relative;
+		float: left;
 	}
 	#nav-inner > ol > li {
 		border-bottom: none;
 	}
+	#nav-inner > ol > li:hover ol {
+		display: block;
+	}
+	#nav-inner > ol > li:hover > a {
+		color: #fff;
+	}
 	#nav ol ol {
 		display: none;
+		left: 0px;
+		top: 55px;
+		position: absolute;
+		background-color: #fff;
+		box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+		width: 200px;
+		font-size: 12px;
+	}
+	#nav ol li:last-child ol {
+		left: auto;
+		right: 0px;
+	}
+	#nav ol ol a {
+		line-height: 35px;
+	}
+	#nav ol li.last ol {
+	}
+	#nav ol ol li {
+		float: none;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	#nav ol ol li:last-child {
+		border-bottom: none;
+	}
+	#nav ol ol a {
+		color: #767676;
+	}
+	#nav ol ol a:hover {
+		color: #323232;
 	}
 }
 blockquote {
