@@ -394,3 +394,7 @@ blockquote {
 #mc_embed_signup .asterisk {
 	color: red;
 }
+p.adr a {
+	text-decoration: none;
+	color: #91938C;
+}
