@@ -342,6 +342,7 @@ hr {
 		color: #323232;
 	}
 }
+/* end desktop res stuff */
 blockquote {
 	padding-left: 20px;
 	border-left: 5px solid #eee;
@@ -350,11 +351,11 @@ blockquote {
 }
 
 #mc_embed_signup {
+	max-width: 350px;
 	padding: 40px;
 	border: 1px solid #ccc;
 	background-color: #F6F6F6;
 	font-size: 14px;
-	width: 350px;
 	margin: 0 auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
