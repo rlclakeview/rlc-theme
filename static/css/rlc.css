@@ -420,3 +420,6 @@ figcaption {
 figcaption h4 {
 	font-size: 14px;
 }
+em {
+	font-style: italic;
+}
