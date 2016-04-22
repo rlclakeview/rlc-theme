@@ -180,6 +180,7 @@ p {
 #content ul {
 	list-style-type: circle;
 	margin-bottom: 26px;
+	margin-left: 20px;
 }
 #content li {
 	font-size: 16px;
@@ -422,4 +423,9 @@ figcaption h4 {
 }
 em {
 	font-style: italic;
+}
+
+strong {
+	font-weight: 600;
+	color: #606361;
 }
