@@ -177,12 +177,12 @@ p {
 	margin-bottom: 20px;
 	color: #91938C;
 }
-#content ul {
+.content ul {
 	list-style-type: circle;
 	margin-bottom: 26px;
 	margin-left: 20px;
 }
-#content li {
+.content li {
 	font-size: 16px;
 	line-height: 160%;
 	color: #91938c;
@@ -238,7 +238,7 @@ footer .organization-name, footer h1 {
 footer div.section {
 	margin-bottom: 40px;
 }
-#content {
+.content {
 }
 img {
 	max-width: 100%;
@@ -428,4 +428,19 @@ em {
 strong {
 	font-weight: 600;
 	color: #606361;
+}
+
+div.panorama {
+	max-width: 960px;
+	margin-top: -30px;
+}
+
+div.panorama figure {
+	height: 170px; /* 200-300*.1=170 */
+	padding-top: 10%;
+	margin: 0px;
+	background-size: cover;
+	-moz-background-size: cover;
+	background-position: center ;
+
 }

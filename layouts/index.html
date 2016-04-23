@@ -1,5 +1,5 @@
 {{ partial "header" . }}
-<div id="content" class="content-container">
+<div class="content content-container">
 	{{ range where .Data.Pages "Type" "home"}}
 		{{.Content }}
 	{{ end }}
