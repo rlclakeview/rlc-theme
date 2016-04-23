@@ -52,10 +52,10 @@ html, body {
 }
 .wrapper {
 	min-height: 100%;
-	margin: 0 auto -500px;
+	margin: 0 auto -600px;
 }
 footer {
-	height: 500px;
+	height: 600px;
 	border-top: 1px solid #DBDCD6;
 	background-color: #F1F2EC;
 }
