@@ -1,0 +1,5 @@
+<ul>
+	{{ range last 5 .Page.Site.Data.messenger.messengers }}
+		<li><a href="{{.url}}">{{.name}}</a></li>
+	{{ end }}
+</ul>
