@@ -237,7 +237,7 @@ p.align-center {
 footer a.org {
 	text-decoration: none;
 }
-footer .organization-name, footer h1 {
+footer p.footer-header {
 	display: inline-block;
 	font-weight: 600;
 	font-size: 16px;
@@ -246,6 +246,9 @@ footer .organization-name, footer h1 {
 	padding-bottom: 10px;
 	/* margin-bottom: 10px; */
 	border-bottom: 1px solid #DDE0DD;
+}
+footer p.footer-header a {
+	color: #354057;
 }
 footer div.section {
 	margin-bottom: 40px;
