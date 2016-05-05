@@ -1,5 +1,9 @@
 </div>
 <div class="panorama">
-	<figure style="background-image: url({{ .Get "src" }}); height: {{ .Get "startHeight" }}px;"></figure>
+	{{$height := .Get "height" | int}}
+	{{$slope := .Get "slope" | int}}
+	{{$foo := div 960 $slope}}
+	{{$startHeight := sub $height $foo}}
+	<figure style="background-image: url({{.Get "src"}}); height: {{$startHeight}}px; padding-top: {{$slope}}%;"></figure>
 </div>
 <div class="content content-container">

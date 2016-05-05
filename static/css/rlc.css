@@ -449,7 +449,7 @@ div.panorama {
 
 div.panorama figure {
 	/* height: 170px; /* 200-300*.1=170 */
-	padding-top: 10%;
+	/* padding-top: 10%; */
 	margin: 0px;
 	background-size: cover;
 	-moz-background-size: cover;
