@@ -9,15 +9,20 @@
 		<link rel="apple-touch-icon" href="/img/rlc-ios-icon.png" />
 		<link rel="icon" href="/img/favicon.ico" />
 		<script>
-			rlcInit = function() {
-				$("#hamburger").on("click", function(e) {
-					e.preventDefault();
-					$("#nav").removeClass("hide-mobile");
-				});
-				$("#close-nav").on("click", function(e) {
-					e.preventDefault();
-					$("#nav").addClass("hide-mobile");
-				});
+			window.onload = function() {
+				var btn = document.getElementById("hamburger");
+				var nav = document.getElementById("nav")
+				var closeNav = document.getElementById("close-nav")
+
+				btn.onclick = function(event) {
+					event.preventDefault();
+					nav.className = " "; // remove hide-mobile class
+				};
+
+				closeNav.onclick = function(event) {
+					event.preventDefault();
+					nav.className = "hide-mobile"; // add hide-mobile class
+				};
 			};
 
 			WebFontConfig = {
@@ -32,7 +37,6 @@
 				s.parentNode.insertBefore(wf, s);
 			})(document);
 		</script>
-		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" onload="rlcInit()"></script>
 	</head>
 	<body>
 		<div class="wrapper">
