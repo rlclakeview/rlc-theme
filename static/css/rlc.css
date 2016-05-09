@@ -50,6 +50,9 @@ table {
 html, body {
 	height: 100%;
 }
+html {
+	-webkit-text-size-adjust: 100%;
+}
 .wrapper {
 	min-height: 100%;
 	margin: 0 auto -600px;
