@@ -68,7 +68,9 @@ body {
 	font-family: "Open Sans";
 }
 .wrapper {
-	background: url(/img/bg.png) repeat-x;
+	background-image: url(/img/bg.png);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
 	min-height: 250px;
 	background-color: #E1E2C4;
 }
