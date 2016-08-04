@@ -4,6 +4,7 @@
 		<meta charset="utf-8"/>
 		<title>{{.Title}}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="NOODP" />
 		<link href="/css/rlc.css" rel="stylesheet" type="text/css" media="all" />
 		<link rel="icon" sizes="192x192" href="/img/rlc-icon.png" />
 		<link rel="apple-touch-icon" href="/img/rlc-ios-icon.png" />
@@ -37,6 +38,7 @@
 				s.parentNode.insertBefore(wf, s);
 			})(document);
 		</script>
+		{{ template "_internal/google_analytics_async.html" . }}
 	</head>
 	<body>
 		<div class="wrapper">
@@ -49,7 +51,7 @@
 			<div id="container">
 				<div id="top-mobile">
 					<a href="#" id="hamburger"><img src="/img/hamburger.png"  alt="link to open mobile nav"/></a>
-					<a href="/im-new" class="btn call-to-action">Worship with us</a>
+					<a href="/preschool" class="btn call-to-action">Resurrection Preschool</a>
 				</div>
 				<div class="content-container">
 					<a href="/"><img id="logo" src="/img/rlc.png" alt="Resurrection Lutheran Church" /></a>
