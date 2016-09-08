@@ -54,5 +54,9 @@
 					<a href="/preschool" class="btn call-to-action">Resurrection Preschool</a>
 				</div>
 				<div class="content-container">
-					<a href="/"><img id="logo" src="/img/rlc.png" alt="Resurrection Lutheran Church" /></a>
+					{{if .Params.logo}}
+						<a href="{{.Params.logo_url}}"><img id="logo" src="{{.Params.logo}}" alt="{{.Params.logo_alt}}" /></a>
+					{{else}}
+						<a href="/"><img id="logo" src="/img/rlc.png" alt="Resurrection Lutheran Church" /></a>
+					{{end}}
 				</div>
